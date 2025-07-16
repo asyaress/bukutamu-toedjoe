@@ -42,13 +42,12 @@ html {
 /* Animasi untuk barisan logo */
 @keyframes slide-horizontal {
   0% {
-      transform: translateX(100%); /* Mulai dari luar layar */
+    transform: translateX(100%); /* Mulai dari luar layar */
   }
   100% {
-      transform: translateX(-100%); /* Bergerak ke luar sisi lain */
+    transform: translateX(-100%); /* Bergerak ke luar sisi lain */
   }
 }
-
 
 /* Overlay untuk membuat video lebih redup */
 .video-overlay {
@@ -145,7 +144,7 @@ html {
 }
 .product-container {
   display: flex;
-  flex-direction: column;  /* Pastikan elemen-elemen ditata secara vertikal */
+  flex-direction: column; /* Pastikan elemen-elemen ditata secara vertikal */
   justify-content: center;
   gap: 20px;
   width: 100%;
@@ -169,8 +168,7 @@ html {
   /* Hides scrollbar in Internet Explorer and Edge */
   scrollbar-width: none;
   /* Hides scrollbar in Firefox */
-  align-items: center;  /* Untuk menempatkan elemen-elemen di tengah */
-
+  align-items: center; /* Untuk menempatkan elemen-elemen di tengah */
 }
 
 /* Hides scrollbar in Webkit browsers (Chrome, Safari) */
@@ -194,8 +192,6 @@ html {
   height: 100%;
   border: none; /* Menghilangkan border default iframe */
 }
-
-
 
 /* Menambahkan warna latar belakang pada setiap produk */
 .product {
@@ -246,7 +242,6 @@ html {
   transition: color 0.3s ease; /* Efek transisi */
 }
 
-
 .refresh-link:hover {
   color: #8e281a; /* Warna saat teks dihover */
 }
@@ -259,6 +254,21 @@ html {
 }
 
 /* Animasi swipe untuk konten */
+.welcome-screen {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  width: 100vw;
+  height: 100vh;
+  z-index: 2; /* pastikan di atas segalanya */
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  cursor: pointer;
+}
 .swipe-left {
   animation: swipeLeft 1s forwards;
 }
